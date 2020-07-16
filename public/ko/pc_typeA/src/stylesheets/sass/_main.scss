@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* 200708 start */
+#meridianTitle {
+    width:100%; height:100vh; background-color:$black; position:absolute; top:0; text-align:center; z-index:400;
+    h3, img {
+        position:absolute; left:50%; top:50%;
+        @include translate(-50%, -50%);
+    }
+    h3 {width:100%; font-size:em(64); font-weight:$bold; color:#c5d0d8; letter-spacing:em(15);}
+    img {@include opacity(0)}
+}
+/* main */
+#container.main_container {
+    background-color:$black; overflow-x:hidden;
+    //pl scene
+    #scenePl {
+        width:100%; height:100vh; padding:60px 0 0; position:relative; overflow:hidden; background-color:$black; z-index:10;
+        .section_wrap {width:100%; height:100%; position:relative;}
+        .pl_img {
+            width:100%;
+            img {
+                width:100%; position:absolute; top:50%; left:50%; z-index:30;
+                @include translate(-50%, -50%);
+                @include opacity(0);
+                &:first-child {@include opacity(.6);}
+                &.pl_img03 {z-index:60;}
+                &.pl_woofer01,
+                &.pl_woofer02 {@include transform(translate(-50%, -47%) scale(.7)); z-index:60;}
+                &.pl_woofer01.loop {
+                    @include animation(imgLoop .2s .1s infinite alternate);
+                }
+                &.pl_woofer02.loop {
+                    @include animation(imgLoop .1s .1s infinite alternate);
+                }
+            }
+        }
+
+        .pl_bg,
+        .pl_bg02 {
+            width:100%; position:absolute; top:50%; left:50%; z-index:50;
+            @include opacity(0);
+        }
+        .pl_bg {@include transform(translate(-50%, -50%) scale(1.5));}
+        .pl_bg02 {@include translate(-50%, -50%) }
+        .pl_txt {
+            color:$white; font-size:em(132); text-align:center; font-weight:$bold; letter-spacing:em(-3);
+            p {
+                width:100%; position:absolute; top:50%; left:0; z-index:70; margin:em(-80) 0 0;
+                @include opacity(0);
+            }
+        }
+        .link_wrap {
+            width:100%; position:absolute; bottom:7%; text-align:center; z-index:100; font-size:16px; font-weight:$bold; display:none;
+            @include opacity(0);
+            ol {
+                display:inline-block;
+                @extend %clearfix;
+            }
+            li {float:left; margin:0 5px;}
+            a {
+                width:230px; height:70px; color:$white; display:block; line-height:64px;
+                @include boxSizing;
+                @include borderSet(3px, solid, $white);
+                @include transition;
+                @include borderRadius(35px);
+                &:focus,
+                &:hover {background-color:$white; color:$black;}
+            }
+        }
+    }
+}
+/* 200708 end */
+
+
+@include keyframes(imgLoop){
+    0% {opacity:0}
+    100% {opacity:1}
+}
+@include keyframes(colorGra){
+    to {background-position:300% 50%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

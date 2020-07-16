@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import "./_common/base";
+@import "./layout";
+@import "./main";
+@import "./pl";
+@import "./pn";
+@import "./meridian";
+@import "./jellybean";
+
+/* common css */
+
+//기본 스타일
+input[type=text],
+textarea,
+select {
+    outline:none;
+    @include transition(border-color, .2s);
+    &:focus { border-color:$gray2 !important;}
+}
+::selection { background:$gray2; color:$white; text-shadow:none; }
+::-moz-selection { background:$gray2; color:$white; text-shadow:none; }
+img { vertical-align:top; image-rendering:-webkit-optimize-contrast;}
+caption { width:1px; height:1px; overflow:hidden; margin:-1px;}
+
+.dimmed {
+    width:100%; height:100%; position:fixed; background-color:$black; display:none !important; top:0; left:0;
+    @include opacity(0);
+}
+
+html, body { max-width:100%; min-width:1440px;}
+html.no_scroll { overflow:hidden; padding:0 17px 0 0;}
+
+//hidden text
+.hidden-txt,
+legend {width:0; height:0; overflow:hidden; display:inline-block; text-indent:-9999px; line-height:1px; position:absolute;}
+
+#wrap {position:relative;}
+#container {position:relative;}
+/*200629 start*/
+
+//스크롤섹션 애니메이션
+.page_scroll{
+
+}
+//비쥬얼 마우스 포인터
+/* 200708 start */
+#discoverBtn {
+    padding:40px 0 0; position:fixed; bottom:15px; left:50%; color:$white;
+    text-shadow:0 0 15px $black; z-index:450;
+    span{ font-size:12px; font-weight:$medium; letter-spacing:1px;}
+    @include translate(-50%, 0);
+    &:hover,
+    &:focus {
+        &:before {@include translate(0, 15px)}
+        &:after {@include translate(0, 5px)}
+    }
+    &:before,
+    &:after {
+        display:block; content:""; position:absolute;
+        @include transition;
+    }
+    &:before {
+        width:2px; height:0; background-color:$white; top:-45px; left:50%; margin:0 0 0 -1px;
+        @include opacity(0);
+        @include animation(discoverBar 2s ease infinite);
+    }
+    &:after {
+        width:16px; height:28px; background-image:url(../../images/layout/scroll_icon.png); top:0; left:50%; margin:0 0 0 -8px;
+        @include backgroundSolt(0, 0);
+    }
+    &.gray_scroll {
+        color:$gray2; text-shadow:none;
+        &:before {background-color:$gray2;}
+        &:after {background-image:url(../../images/layout/scroll_icon_gray.png);}
+    }
+}
+/* 200708 end */
+@include keyframes(discoverBar) {
+    from {height:0;}
+    to {
+        height:30px;
+        @include opacity(1);
+    }
+}
+.js-scr-box {
+    @include scrAnimateSet(0, 50px);
+}
+
+
+//유튜브 플레이
+.youtube_wrap {
+    position:relative;
+    .yt_player,
+    .img_wrap {
+        width:100%; height:100%; position:absolute; top:0; left:0;
+        @include backgroundSoltC;
+    }
+}
+.yt_play_btn {
+    width:170px; height:60px; position:absolute; top:50%; left:50%; color:$white;
+    font-size:18px; text-indent:22px; font-weight:$medium;
+    @include borderSet(2px, solid, $white);
+    @include borderRadius(40px);
+    @include translate(-50%, -50%);
+    @include transition;
+    &:hover,
+    &:focus {
+        color:$black; background-color:$white;
+        &:after {border-left-color:$black;}
+    }
+    &:after {
+        width:0; height:0; display:block; content:""; border-left-style:solid; border-left-width:13px; border-left-color:$white;
+        border-top:8px solid transparent; border-bottom:8px solid transparent; position:absolute; top:20px; left:45px;
+    }
+}
+/*200629 end*/

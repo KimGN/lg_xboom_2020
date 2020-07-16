@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>LG XBOOM Go PL Series</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="title" content=''>
+    <meta name="Description" content=''>
+    <meta name="Keywords" content=''>
+    <meta name="Author" content="LG OLED AI">
+    <meta name="robots" content="ALL">
+    <link rel="icon" type="image/png" href="../../images/layout/favicon.ico" />
+    <link rel="stylesheet" href="../../stylesheets/css/common.css">
+    <script src="../../javascripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+        var setCookie = function(name, value, exp) {
+            var lh = location.host;
+            var mydomain = '.lg.com';
+            if(lh.indexOf('lge.com')>=0) {
+                mydomain = '.lge.com';
+            } else if(lh.indexOf('localhost')>=0) {
+                mydomain = 'localhost';
+            } else if(lh.indexOf('krema0515.com')>=0) {
+                mydomain = 'krema0515.com';
+            }
+            var date = new Date();
+            date.setTime(date.getTime() + exp*24*60*60*1000);
+            document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/' + ';domain=' + mydomain;
+        };
+
+        var getCookie = function(name) {
+            var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+            return value? value[2] : null;
+        };
+        if(getCookie("analysisCookie") === 'Y') {
+            // adobe
+            var d = document,
+                s = d.createElement('script'),
+                h = d.head || d.getElementsByTagName("head")[0],
+                as = {
+                    "src": "//assets.adobedtm.com/322f63b58a72/8a275ffd7aa6/launch-f8ed4c3e94f9.min.js",
+                    "async": "async"
+                };
+            for (var i in as) {
+                s.setAttribute(i, as[i]);
+            }
+            h.appendChild(s);
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-X5WZ');
+        }
+    </script>
+</head>
+<body>
+<!--200629 start-->
+<div id="cookieAllPc">
+    <div class="cookie_top">
+        <div class="top_box">
+            <p>
+                We use strictly necessary cookies for this website to function, we do have other optional cookies,
+                which you can enable and descriptions of these are available beside the opt in buttons.
+                To find out further information on our cookies, <a href="">please see our Privacy and Cookie Policy.</a>
+                <button type="button" id="cookieOpenBtn" class="">Cookie Settings</button>
+            </p>
+            <div class="accept_wrap">
+                <button type="button" id="allAgreeBtn">ACCEPT ALL COOKIES</button>
+            </div>
+        </div>
+    </div>
+    <div class="cookie_bottom">
+        <div class="bottom_box">
+            <p>You will find below the different types of cookies used on LG.com. If you wish to allow any of these cookies, click to opt in.</p>
+            <ol>
+                <li>
+                    <dl>
+                        <dt><span>Functional Cookies</span></dt>
+                        <dd>Enable for useful website features like product reviews, the where to buy function, recently viewed items and search data.</dd>
+                    </dl>
+                    <div class="check_wrap">
+                        <input type="checkbox" id="functionalAgree">
+                        <label for="functionalAgree">Functional Cookies</label>
+                    </div>
+                </li>
+                <li>
+                    <dl>
+                        <dt><span>Social media</span></dt>
+                        <dd>Connect with your social channels to share LG Technology with friends for example on Facebook and Twitter.</dd>
+                    </dl>
+                    <div class="check_wrap">
+                        <input type="checkbox" id="socialAgree">
+                        <label for="socialAgree">Social media</label>
+                    </div>
+                </li>
+                <li>
+                    <dl>
+                        <dt><span>Website analysis</span></dt>
+                        <dd>Help us to understand your behaviour on our website so we can improve the content and personalise your experience on LG.COM</dd>
+                    </dl>
+                    <div class="check_wrap">
+                        <input type="checkbox" id="analysisAgree">
+                        <label for="analysisAgree">Website analysis</label>
+                    </div>
+                </li>
+                <li>
+                    <dl>
+                        <dt><span>Advertising and <br>targeting cookies</span></dt>
+                        <dd>Allow us to gather information about how you interact with our advertising and our website.</dd>
+                    </dl>
+                    <div class="check_wrap">
+                        <input type="checkbox" id="advertisingAgree">
+                        <label for="advertisingAgree">Advertising and targeting cookies</label>
+                    </div>
+                </li>
+            </ol>
+            <button type="button" id="cookieSave">SAVE</button>
+        </div>
+    </div>
+    <div id="cookieDimmed" class="dimmed"></div>
+</div>
+<!--200629 end-->
+<div id="wrap">
+    <!-- header-->
+    <header id="header" class='white_header'>
+        <div class="header_wrap">
+            <h1 id="logo"><a href="../main/main.html">main page link</a></h1>
+            <div id="allNav">
+                <button type="button" id="allMenuBtn" title="Click to show the page list"><i></i><span>MENU</span></button>
+                <nav>
+                    <h2 class="hidden-txt">all navigation</h2>
+                    <div class="gnb_wrap">
+                        <ul>
+                            <li><a href="../sub/pl.html" title="Learn more about PL Series">PL Series<span>Simply Style</span></a></li>
+                            <li><a href="../sub/Jellybean.html" title="Learn more about Jellybean Series">Jellybean Series</a></li>
+                            <li><a href="../sub/meridian.html" title="Learn more about LG with Meridian technology">with MERIDIAN Technology</a></li>
+                        </ul>
+                    </div>
+                    <div class="shop_now">
+                        <a href="" title="Shop PL7 black now"><span>SHOP NOW</span></a>
+                    </div>
+                </nav>
+            </div>
+            <div id="buyNav">
+                <button type="button" id="buyNavBtn" title="Shop LG XBOOM Go now"><i></i><span>SHOP NOW</span></button>
+                <nav>
+                    <h2 class="hidden-txt">buy navigation</h2>
+                    <div class="buy_wrap">
+                        <ol>
+                            <li>
+                                <p>PL Series<span>Simply Style</span></p>
+                                <ul>
+                                    <li><a href="" title="Shop PL7 black now" target="_blank">PL7</a></li>
+                                    <li><a href="" title="Shop PL5 black now" target="_blank">PL5</a></li>
+                                    <li><a href="" title="Shop PL2 black now" target="_blank">PL2</a></li>
+                                    <li><a href="" title="Shop PL7 white now" target="_blank">PL7W</a></li>
+                                    <li><a href="" title="Shop PL5 white now" target="_blank">PL5W</a></li>
+                                    <li><a href="" title="Shop PL2 white now" target="_blank">PL2W</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+            <div id="navDimmed" class="dimmed"></div>
+        </div>
+    </header>
+    <!-- //header-->
+
+    <!--JellybeanContainer-->
+    <section id="container" class="jellybean_container">
+    <button type="button" id="discoverBtn" class="gray_scroll"><span>SCROLL</span></button>
+
+    <!--jbSeries scene-->
+    <div id="jbSeries">
+        <div class="scene_wrap" id="intro">
+            <div class="jb_img">
+                <img src="../../images/jellybean/jb_img02.jpg" class="jb_img02" alt="">
+            </div>
+            <div class="jb_txt">
+                <h3>
+                    Choose Your<br>
+                    Favorite Flavor
+                </h3>
+                <img src="../../images/jellybean/jb_img03.png" class="jb_img03" alt="">
+            </div>
+            <p class="disclaimer">* Each Jellybean color may have a different launch schedule.</p>
+            <img src="../../images/jellybean/jb_img01.png" class="jb_img01" alt="">
+        </div>
+    </div>
+    <!--//jbSeries scene-->
+
+    <!--//jblist scene-->
+    <div id="jblist">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <div class="list_wrap">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!--//jblist scene-->
+
+    <!--meridian scene-->
+    <div id="meridian_tech">
+        <div class="scene_wrap">
+            <div class="img_wrap">
+                <img src="../../images/jellybean/jb_img05.png" class="tech_img01" alt="">
+            </div>
+            <div class="txt_wrap">
+                <h3>
+                    MERIDIAN Technology<br>
+                    <span>Made in Sweet Harmony</span>
+                </h3>
+                <p>
+                    The collaboration with Meridian continues.<br>
+                    Premium quality sound meets the full-flavored<br>
+                    style of LG XBOOM Go Jellybean.
+                </p>
+            </div>
+            <img src="../../images/jellybean/jb_img04.jpg" class="tech_img02" alt="">
+        </div>
+    </div>
+    <!--//meridian scene-->
+
+    <!--soundBoost scene-->
+    <div id="sound_boost">
+        <div class="scene_wrap">
+            <div class="img_wrap">
+                <img src="../../images/jellybean/jb_img06.jpg" class="sound_img01" alt="">
+                <img src="../../images/jellybean/jb_img07.jpg" class="sound_img02" alt="">
+                <img src="../../images/jellybean/jb_img08.jpg" class="sound_img03" alt="">
+                <img src="../../images/jellybean/jb_img09.jpg" class="sound_img04" alt="">
+                <img src="../../images/jellybean/jb_img10.jpg" class="sound_img05" alt="">
+            </div>
+            <div class="txt_wrap">
+                <h3>
+                    Sound Boost<br>
+                    <span>Added Oomph</span>
+                </h3>
+                <p>
+                    Press Sound Boost to increase the sound<br>
+                    power, widen the sound field, and add some<br>
+                    zest to your music.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--//soundBoost scene-->
+    <!--goSound-->
+    <div id="goSound">
+        <h3>
+            LG XBOOM Go Sound <br>
+            Impresses the Experts
+        </h3>
+        <div class="slider_wrap" id="review">
+            <ul class="img_wrap">
+                <li><img src="../../images/pl/go_sound_img01.jpg" alt="Video screenshot of influencer DLX Willington talking to the camera and accompanying quote about LG XBOOM Go"></li>
+            </ul>
+            <div class="slider_txt">
+                <ul class="txt_wrap">
+                    <li>
+                        <p class="copy_txt">
+                            “I feel like it might make the sound better <br>
+                            in comparison to others that we’ve seen<br>
+                            just because of the way they focused their<br>
+                            passive radiators. It’s a little bit different<br>
+                            from what we’ve seen and from listening to<br>
+                            them right in here they do sound pretty<br>
+                            awesome.”
+                        </p>
+                        <h4>DLX Willington</h4>
+                        <p class="name_txt">Tech YouTuber</p>
+                    </li>
+                </ul>
+                <div class="nav_btn">
+                    <button type="button" class="prev_btn">prev</button>
+                    <button type="button" class="next_btn">next</button>
+                </div>
+            </div>
+            <!--<div class="indi_btn"></div>-->
+            <p class="disc">*Influencers are provided free LG products for their reviews.</p>
+        </div>
+
+    </div>
+    <!--//goSound-->
+
+    <!--battery scene-->
+    <div id="battery">
+        <div class="scene_wrap">
+            <div class="battery_sky">
+                <img src="../../images/pl/battery_sky.jpg" class="battery_img01" alt="An LG XBOOM Go PL7 with sky blue lighting is placed in front of a sunset sky turning into a night sky">
+                <img src="../../images/pl/battery_time.png" class="battery_img02" alt="">
+            </div>
+            <div class="txt_wrap">
+                <h3>All-day Battery Life</h3>
+                <p>
+                    24-hour battery life lets you enjoy quality sound for longer, <br>
+                    wherever you go, without needing to charge.
+                </p>
+            </div>
+            <div class="img_wrap">
+                <img src="../../images/pl/battery_img01.png" class="battery_img03" alt="">
+            </div>
+            <p class="disc">
+                * 24-hour battery life is based on using 50% volume and no lighting. <br>
+                ** Other conditional factors may affect battery life.
+            </p>
+        </div>
+    </div>
+    <!--//battery scene-->
+
+    <!--water scene-->
+    <div id="water">
+        <div class="scene_wrap">
+            <div class="txt_wrap">
+                <h3>IPX5 Water Resistance</h3>
+                <p>
+                    IPX5 means your speaker will keep on working if it gets wet,<br>
+                    so you can keep on enjoying yourself.
+                </p>
+                <span>* IPX5 protects against dust and low-pressure water jet spray from any direction.</span>
+            </div>
+        </div>
+    </div>
+    <!--water scene-->
+
+    <!--surround scene-->
+    <div id="surround">
+        <div class="scene_wrap" id="compatible_tv">
+            <div class="txt_wrap">
+                <h3>
+                    Bluetooth Surround <br>
+                    with Compatible LG TVs
+                </h3>
+                <p>
+                    Easily connect two LG XBOOM Go PL7 models to your LG TV <br>
+                    to enjoy an immersive surround sound while watching your favourite content.
+                </p>
+            </div>
+            <div class="surround_img">
+                <img src="../../images/pl/surround_img01.png" class="surround_img01" alt="Two LG XBOOM Go PL7s with sky blue lighting are in front of a TV. A circular wave of blue light connects all three products.">
+                <img src="../../images/pl/surround_img02.png" class="surround_img02" alt="">
+                <img src="../../images/pl/surround_img03.jpg" class="surround_img03" alt="">
+            </div>
+            <p class="disc">
+                * Speakers have to be the same model. <br>
+                ** Only available from 2020 on OLED, NanoCell, and UHD models
+            </p>
+        </div>
+    </div>
+    <!--//surround scene-->
+
+    <!--wireless scene-->
+    <div id="wireless">
+        <div class="scene_wrap">
+            <div class="txt_wrap">
+                <h3>Wireless Party Link</h3>
+                <!--200708 start-->
+                <p>
+                    Multiply the music and turn up the fun<br>
+                    with the capability to wirelessly link up to<br>
+                    one hundred LG XBOOM Go PL7.
+                </p>
+            </div>
+            <div class="img_wrap">
+                <img src="../../images/pl/wireless_img01.png" class="wireless_img01" alt="A top-down view of eight LG XBOOM Go PL7 placed in a circle around a link icon.​">
+                <img src="../../images/pl/wireless_img02.png" class="wireless_img02" alt="">
+                <img src="../../images/pl/wireless_img03.png" class="wireless_img03" alt="">
+                <img src="../../images/pl/wireless_img04.png" class="wireless_img04" alt="">
+                <img src="../../images/pl/wireless_img05.png" class="wireless_img05" alt="">
+                <img src="../../images/pl/wireless_img06.png" class="wireless_img06" alt="">
+                <img src="../../images/pl/wireless_img07.png" class="wireless_img07" alt="">
+                <img src="../../images/pl/wireless_img08.png" class="wireless_img08" alt="">
+                <img src="../../images/pl/wireless_icon.png" class="wireless_icon" alt="">
+            </div>
+        </div>
+    </div>
+    <!--wireless scene-->
+
+    <!--simple scene-->
+    <div id="simple">
+        <div class="scene_wrap">
+            <div class="txt_wrap">
+                <h3>Simple<br>Voice Command</h3>
+                <p>
+                    Press the play button for two seconds,<br>
+                    speak to activate Google Assistant<br>
+                    on your Android™ phone or Siri on iOS,<br>
+                    then play your music, podcasts, and more.
+                </p>
+            </div>
+            <div class="img_wrap">
+                <div class="message">
+                    <p>Play next song</p>
+                </div>
+                <img src="../../images/pl/simple_img01.jpg" alt="Top-down view of an LG XBOOM Go PL7 and smartphone. There is a speech bubble with ‘play next song’ inside.​">
+                <img src="../../images/pl/simple_img02.png" class="simple_img01" alt="">
+                <img src="../../images/pl/simple_img03.jpg" class="simple_img02" alt="">
+                <img src="../../images/pl/simple_logo.jpg" class="simple_logo" alt="works with Hey Google logo">
+            </div>
+        </div>
+    </div>
+    <!--simple scene-->
+
+    <!--choice scene-->
+    <div id="choice">
+        <div class="scene_wrap" id="white">
+            <div class="img_wrap">
+                <img src="../../images/pl/choice_img01.png" class="choice_img01" alt="A number of blue-black and white-colored LG XBOOM Go PL7s are alternately placed on a white surface.">
+                <img src="../../images/pl/choice_img02.jpg" class="choice_img02" alt="">
+                <img src="../../images/pl/choice_img03.png" class="choice_img03" alt="">
+            </div>
+            <div class="unit_img">
+                <img src="../../images/pl/choice_img04.png" class="choice_img04" alt="">
+                <img src="../../images/pl/choice_img05.png" class="choice_img05" alt="">
+                <img src="../../images/pl/choice_img06.png" class="choice_img06" alt="">
+                <img src="../../images/pl/choice_img07.png" class="choice_img07" alt="">
+                <img src="../../images/pl/choice_img08.png" class="choice_img08" alt="">
+            </div>
+            <div class="txt_wrap">
+                <h3>
+                    Two Colors <br>
+                    Two Great Choices
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!--//choice scene-->
+    <!--balanced video-->
+    <div id="balanced02">
+        <div class="youtube_wrap">
+            <div class="yt_player" data-url="TlwnjFewJhE"></div>
+            <div class="img_wrap" style="background-image: url(../../images/pl/balanced_img02.jpg);"></div>
+            <button type="button" class="yt_play_btn" title="Play PL7 feature video">PLAY</button>
+            <div class="txt_wrap">
+                <strong>
+                    2020 LG XBOOM Go<br>
+                    <span>Balanced & Clear Sound</span>
+                </strong>
+            </div>
+        </div>
+    </div>
+    <!--//balanced video-->
+    <!--200629 end-->
+    <!--choose-->
+    <div id="choose">
+        <h3>Choose Your LG XBOOM Go</h3>
+        <div class="choose_wrap" id="pl_spec">
+            <ul class="product_wrap">
+                <li class="pl7">
+                    <div class="img_wrap">
+                        <img src="../../images/pl/pl7_black.png" alt="">
+                        <img src="../../images/pl/pl7_white.png" alt="">
+                    </div>
+                    <div class="color_btn">
+                        <div class="btn_box">
+                            <button type="button" title="Change PL7 color to black" class="active"><span><i></i>Black</span></button>
+                            <button type="button" title="Change PL7 color to white"><span><i></i>White</span></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="pl5">
+                    <div class="img_wrap">
+                        <img src="../../images/pl/pl5_black.png" alt="">
+                        <img src="../../images/pl/pl5_white.png" alt="">
+                    </div>
+                    <div class="color_btn">
+                        <div class="btn_box">
+                            <button type="button" title="Change PL5 color to black" class="active"><span><i></i>Black</span></button>
+                            <button type="button" title="Change PL5 color to white"><span><i></i>White</span></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="pl2">
+                    <div class="img_wrap">
+                        <img src="../../images/pl/pl2_black.png" alt="">
+                        <img src="../../images/pl/pl2_white.png" alt="">
+                    </div>
+                    <div class="color_btn">
+                        <div class="btn_box">
+                            <button type="button" title="Change PL2 color to black" class="active"><span><i></i>Black</span></button>
+                            <button type="button" title="Change PL2 color to white"><span><i></i>White</span></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <table>
+                <caption>An LG XBOOM Go PL7 and PL5 with magenta lighting, and PL2 without lighting are placed in a lineup.</caption>
+                <colgroup>
+                    <col style="width: 14.5%;">
+                    <col style="width: 30%;">
+                    <col style="width: 28.5%;">
+                    <col style="width: 27%;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <!--200702 start-->
+                    <th>ㅤ</th>
+                    <!--200702 end-->
+                    <th>PL7</th>
+                    <th>PL5</th>
+                    <th>PL2</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>Meridian Technology</th>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <th>Sound Modes</th>
+                    <td>Sound Boost</td>
+                    <td>Sound Boost</td>
+                    <td>Sound Boost</td>
+                </tr>
+                <tr>
+                    <th>Amplifier</th>
+                    <td>Dual Action Bass</td>
+                    <td>Dual Action Bass</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Voice Command</th>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <th>Sound Output</th>
+                    <td>30W</td>
+                    <td>20W</td>
+                    <td>5W</td>
+                </tr>
+                <tr>
+                    <th>Battery Life</th>
+                    <td>24 hrs</td>
+                    <td>18 hrs</td>
+                    <td>10 hrs</td>
+                </tr>
+                <tr>
+                    <th>Waterproof</th>
+                    <td>IPX5</td>
+                    <td>IPX5</td>
+                    <td>IPX5</td>
+                </tr>
+                <tr>
+                    <th>Size (WxHxD)mm</th>
+                    <td>245 x 98 x 98</td>
+                    <td>201 x 79 x 79</td>
+                    <td>126 x 82 x 80</td>
+                </tr>
+                <tr class="shop_link">
+                    <!--200702 start-->
+                    <th>ㅤ</th>
+                    <!--200702 end-->
+                    <td>
+                        <a href="">SHOP NOW</a>
+                        <a href="">SHOP NOW</a>
+                    </td>
+                    <td>
+                        <a href="">SHOP NOW</a>
+                        <a href="">SHOP NOW</a>
+                    </td>
+                    <td>
+                        <a href="">SHOP NOW</a>
+                        <a href="">SHOP NOW</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--//choose-->
+</section>
+    <!--//JellybeanContainer-->
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer_wrap">
+            <ol class="etc_link">
+                <li><a href="https://www.lg.com/uk/privacy">PRIVACY</a></li>
+                <li><a href="https://www.lg.com/uk/legal">LEGAL</a></li>
+            </ol>
+            <p class="copyright">ⓒ 2020 LG Electronics.</p>
+            <div class="share_wrap">
+                <ol>
+                    <li><a href="https://www.facebook.com/LGUK" target="_blank" title="Opens in a new window">facebook</a></li>
+                    <li><a href="https://twitter.com/LGUK" target="_blank" title="Opens in a new window">twitter</a></li>
+                    <li><a href="https://www.youtube.com/user/LGBlogUK" target="_blank" title="Opens in a new window">youtube</a></li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+<script src="../../javascripts/plugin.js"></script>
+<script src="../../javascripts/design_common.js"></script>
+</body>
+</html>
